@@ -1,0 +1,108 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>build language</title>
+    </head>
+    <style>
+        *{
+        margin: 0%
+        }
+
+        .Main1{
+            width:100vw;
+            height: 100vh;
+            background-color: blue;
+        }
+
+        #Main_image{
+            width: 100vw;
+            height: 100vh;
+
+            position: relative;
+        }
+
+        .Sub1{
+            width: 25vw;
+            height: 50vh;
+            position: absolute;
+            left: 10vw;
+            top:20vh;
+            background-color: rgb(255, 255, 255,0.5);
+            border-radius: 10%;
+            padding-top: 15px;
+            border:2px solid black;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+        } 
+
+        .Sub1 h1{
+            text-align: center;
+            margin-bottom: 5px;
+            
+        }
+
+        .Sub1 label{
+            display: inline-block;
+            width: 100px;
+
+            font-size: 20px;
+            padding-left: 20px;
+            font-weight: bold;
+        }
+
+        .Sub1 input{
+            width:200px;
+            height: 25px;
+            border-radius: 30px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .Sub1 button{
+            width: 150px;
+            height: 35px;
+            background-color:black;
+            color:white;
+            border-radius: 50px;
+            margin-left: 110px;
+        }
+
+        .Sub2{
+            
+            position: absolute;
+            bottom:15vh;
+            left:15vw;
+            background-color: black;
+        }
+    </style>
+    <body>
+        <div class="Main1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQq5RDMK2j5ThAuVvqJgly5WSLsU1ijKdzbn9Y-feP7iD8VTExH6dMUa4s&s=10" alt="" id="Main_image">
+            <div class="Sub1">
+                <h1>Login Here</h1>
+                <br>
+                <label>Name</label>
+                <input type="text">
+                <br><br>
+                <label>Number</label>
+                <input type="number">
+                <br><br>
+                <label>Email</label>
+                <input type="email">
+                <br><br>
+                <label>Password</label>
+                <input type="password">
+                <br><br>
+                <button>Login</button>
+            </div>
+            <div class="Sub2" id="demo">
+
+            </div>
+        </div>
+    </body>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pageLanguage:`en`},`demo`);
+        }
+    </script>
+</html>

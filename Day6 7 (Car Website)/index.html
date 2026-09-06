@@ -1,0 +1,171 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Cars</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            body{
+                margin: 0px;
+            }
+            .Main1{
+                width: 100vw;
+                height:100vh;
+                background-color: blueviolet;
+            }
+            #Main1_Image{
+                width: 100vw;
+                height:100vh;
+
+                position: relative;
+            }
+            .Sub11{
+                position:absolute;
+                top: 50px;
+                right: 50px;
+            }
+            .Sub11 img{
+                width: 200px;
+            }
+            .Sub12{
+                position:absolute;
+                top: 20px;
+                left: 70px;
+            }
+            .Sub12 img{
+                width: 400px;
+            }
+            .Sub13{
+                color: silver;
+                font-size: x-large;
+                position:absolute;
+                top: 250px;
+                left: 70px;
+            }
+            .Sub13 td{
+                padding-bottom: 40px;
+            }
+            .Sub14{
+                transition: all 1s ease-in-out;
+                font-size: 90px;
+                align-items: center;
+                position: absolute;
+                width: 80vw;
+                bottom: 15vh;
+                left: 5vw;
+                color: silver;
+                opacity: 0.5;
+            }
+            .Main1:hover .Sub14{
+                opacity: 1;
+                bottom: 5vh;
+                left:10vw;
+            }
+            span{
+                color: rgb(170, 9, 9);
+            }
+            .Sub13 td:hover{
+                padding-left: 30px;
+                color: rgb(170, 9, 9);
+            }
+
+            .Main2{
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+                position: relative;
+            }
+            .Sub21{
+                width: 40vw;
+                height: 40vh;
+                
+                position: absolute;
+                left: 5vw;
+                top: 30vh;
+                font-size: x-large;
+                color: white;
+                text-align: center;
+            }
+            .Sub22{
+                width: 100vw;
+                height: 100vh;
+                background-color: darkorange;
+                position: absolute;
+                left: 50vw;
+                transition: all 3s ease-in-out;
+            }
+            .Sub22 img{
+                width: 100vw;
+                height: 100vh;
+            }
+            .Main2:hover .Sub22{
+                left: 0vw;
+            }
+            .Sub23{
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                left: -100vw;
+                transition: all 3s ease-in-out;
+            }
+            
+            .Sub23 img{
+                width: 100vw;
+                height: 100vh;
+            } 
+            .Main2:hover .Sub23{
+                left: 0vw;
+                transition-delay:3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Main1">
+            <img src="https://cdna.artstation.com/p/assets/images/images/027/383/850/large/ashu-malik-new-bugati011.jpg?1591373160" alt="" id="Main1_Image">
+            <div class="Sub11">
+                <img src="https://www.pngplay.com/wp-content/uploads/13/Bugatti-Logo-Transparent-Image.png" alt="">
+            </div>
+            <div class="Sub12">
+                <img src="https://1000logos.net/wp-content/uploads/2020/02/Bugatti-Color.png" alt="">
+            </div>
+            <div class="Sub13">
+                <table>
+                    <tr>
+                        <td>Home</td>
+                    </tr>
+                    <tr>
+                        <td>Bookings</td>
+                    </tr>
+                    <tr>
+                        <td>Models</td>
+                    </tr>
+                    <tr>
+                        <td>Racing</td>
+                    </tr>
+                    <tr>
+                        <td>About</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Sub14">
+                <h1>Bugatti <span>Veyron</span></h1>
+            </div>
+        </div>
+        
+        <div class="Main2">
+            <div class="Sub21">
+                <br>
+                <h1>Bugatti Veyron</h1>
+                <br>
+                <p>The Bugatti Veyron is a legendary mid-engine hypercar built by Bugatti in France. It features an 8.0-liter quad-turbocharged W16 engine making 1,001 horsepower. It reaches a top speed of 407 km/h (253 mph) and costs over $1 million, pioneering the modern hypercar</p>
+            </div>
+            <div class="Sub22">
+                <img src="https://i.ytimg.com/vi/QVay5oTjVWg/maxresdefault.jpg" alt="">
+            </div>
+            <div class="Sub23">
+                <img src="https://img.goodfon.com/wallpaper/big/a/60/bugatti-veyron-black-red.webp" alt="">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Sample Portfolio</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            .Main{
+                width:100vw;
+                height: 100vh;
+                background-color: rgb(46, 23, 220);
+                position: relative;
+            }
+            .sub1{
+                width:70vw;
+                height: 80vh;
+                background-color: white;
+                position: absolute;
+                top: 10vh;
+                left: 20vw;
+                border-radius: 80px 20px 80px 20px;
+            }
+            .sub2{
+                width:30vw;
+                height: 50vh;
+                background-color: rgb(61, 39, 227);
+                position: absolute;
+                top:20vh;
+                left:25vw;
+                border-radius: 80px 20px 80px 20px;
+
+                color: white;
+                font-size: x-large;
+                padding-left: 20px;
+            }
+
+            .sub2 button{
+                width:180px;
+                height:50px;
+                background-color: black;
+                font-size: 20px;
+                font-weight: bold;
+                color: white;
+                border-radius: 20px 10px 20px 10px;
+            }
+            .sub3{
+                width:30vw;
+                height: 50vh;
+                background-color: rgb(61, 39, 227);
+                position: absolute;
+                top:30vh;
+                right:15vw;
+                border-radius: 80px 20px 80px 20px;
+            }
+            
+            .sub3 img{
+                width: 90%;
+                height:90%;
+                border-radius: 80px 20px 80px 20px;
+                margin-top: 5%;
+                margin-left: 5%;
+                border: 2px solid rgb(4, 4, 4);
+            }
+
+            .sub4{
+                display: none;
+                width:30vw;
+                height: 50vh;
+                background-color: rgb(61, 39, 227);
+                position: absolute;
+                top:30vh;
+                right:15vw;
+                border-radius: 80px 20px 80px 20px;
+            }
+            
+            .sub4 img{
+                width: 90%;
+                height:90%;
+                border-radius: 80px 20px 80px 20px;
+                margin-top: 5%;
+                margin-left: 5%;
+                border: 2px solid rgb(4, 4, 4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Main">
+            <div class="sub1">
+                
+            </div>
+            <div class="sub2">
+                <h1 id="heading1">You Know</h1>
+                
+                <p id="heading2">Who I am ?</p>
+                <br>
+                <button id="B1" onclick="changeContent()">Explore</button>
+            </div>
+            <div class="sub3" id="sub3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVjj5s7K1BHYxIPf6ud6_DPwDKWFK-DWqSLEjGTaxyA&s=10" alt="">
+            </div>
+            <div class="sub4" id="sub4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyqfoDsMBoHkgwF38-370aKEsNVH56QYpvGYLx_tCT0Q&s=10" alt="">
+            </div>
+        </div>
+    </body>
+    <script>
+        function changeContent(){
+            document.getElementById("heading1").innerHTML="Vasavi Nandikolla"
+            document.getElementById("heading2").innerHTML="B-tech in Artificial intelligence and data science"
+            document.getElementById("sub3").style.display="none";
+            document.getElementById("sub4").style.display="block";
+        }
+    </script>
+</html>

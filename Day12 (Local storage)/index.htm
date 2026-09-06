@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Local storage</title>
+    </head>
+    <body>
+        <form onsubmit="setData()">
+            <input type="text" id="name">
+            <input type="submit" id="submit">
+        </form>
+        <button onclick="deleteData()">clear</button>
+    </body>
+    <script>
+        function setData(){
+            let username= document.getElementById("name").value;
+            localStorage.setItem("user name",username);
+        }
+        function deleteData(){
+            localStorage.clear()
+        }
+    </script>
+</html>

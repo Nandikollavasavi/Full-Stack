@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <style>
+            #question{
+                background-color: rgb(2, 24, 118);
+                color: ghostwhite;
+                text-align: center;
+                font-size: 70px;
+            }
+            #B1{
+                width: 150px;
+                background-color: green;
+                color:white;
+                border-radius: 30px;
+                font-size: 30px;
+            }
+
+            #B2{
+                width: 150px;
+                background-color: rgb(255, 0, 0);
+                color:white;
+                border-radius: 30px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="question">Is Javascript is Easy ?</h1>
+        <button id="B1">Yes</button>
+        <button id="B2">No</button>
+    </body>
+    <script>
+        document.getElementById("B1").onclick = function(){
+            document.getElementById("question").innerHTML = "Yes , Javascript is easy."
+        }
+        document.getElementById("B2").onclick = function(){
+            document.getElementById("question").innerHTML = "No , You are not practicing!"
+        }
+    </script>
+
+</html>

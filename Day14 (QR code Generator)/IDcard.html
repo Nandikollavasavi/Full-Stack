@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Day 14 QR code generator</title>
+    </head>
+    <body>
+        <h1> </h1>
+        <script>
+            class IDModel {
+                constructor(username,userage,userrollno){
+                    this.Name = username;
+                    this.Age = userage;
+                    this.roll = userrollno;
+                }
+                printId(){
+                    document.writeln(`Name is ${this.Name}, age is ${this.Age}, and tell the roll no is ${this.roll}`)
+                }
+            }
+            let VasaviID = new IDModel("Vasavi",19,4503)
+            VasaviID.printId();
+        </script>
+    </body>
+</html>
+

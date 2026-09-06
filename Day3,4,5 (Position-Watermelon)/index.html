@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>K drama</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            .First{
+                width:100vw;
+                height: 100vh;
+
+                position: relative;
+            }
+
+            .Mainimage{
+                width: 100vw;
+                height: 100vh;
+
+                transition: all 2s ease-in-out;
+            }
+
+            .F1{
+                height:15vh;
+                width:8vw;
+                background-color:blue;
+
+                position:fixed;
+                left:1vw;
+                top:2vh;
+
+                border-radius: 100%;
+
+                z-index: 1;
+            }
+
+            .F1 img{
+                height:15vh;
+                width:8vw;                
+                border-radius: 100%;
+            }
+
+            .F2{
+                height:40vh;
+                width:50vw;
+                background-color:rgb(0, 0, 0,0.4);
+
+                position:absolute;
+                
+                bottom:10vh;
+                left:20vw;
+
+                font-size: 0px;
+                color: ghostwhite;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .F2 img{
+                height:40vh;
+                width:50vw;
+            }
+
+            .First:hover .Mainimage{
+                transform: scale(1.2);
+            }
+
+            .Second{
+                height: 100vh;
+                width: 100vw;
+                background: linear-gradient(to bottom,red,rgb(107, 243, 4));
+
+                position: relative;
+            }
+
+            .S1{
+                width: 40vw;
+                height:60vh;
+                background-color: ghostwhite;
+
+                position: absolute;
+                top:20vh;
+                left:30vw;
+
+                font-size: xx-large;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                
+                border-radius: 50px;
+            }
+            
+
+            input{
+                display: block;
+                width: 25vw;
+                height: 5vh;
+                margin-bottom: 25px;
+
+                border-radius: 50px;
+            }
+
+            button{
+                width: 15vw;
+                height: 6vh;
+                background: linear-gradient(to left,rgb(255, 21, 0),rgb(4, 221, 4));
+                border-radius: 50px;
+                font-size: large;
+            }
+
+            ::placeholder{
+                font-size: larger;
+                color: black;
+                padding-left: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="First">
+            <img src="https://0.soompi.io/wp-content/uploads/2023/10/30014520/twinkling-watermelon-1-1.jpeg" alt="image" class="Mainimage">
+            
+            <div class="F1">
+                <img src="https://i.pinimg.com/736x/46/d3/a2/46d3a2a28513506631a3253116d19322.jpg" alt="">
+            </div>
+            
+            <div class="F2">
+                <img src="https://1.vikiplatform.com/c/40131c/e7f7ef9717.png?x=b" alt="">
+            </div>
+            
+        <div class="Second">
+            <div class="S1">
+                <h2>Welcome to Watermelon</h2>
+                <input type="text" placeholder="Enter name">
+                <input type="number" placeholder="Enter number">
+                <input type="email" placeholder="Enter email">
+                <button>Submit</button>
+            </div>
+        </div>
+    </body>
+</html>

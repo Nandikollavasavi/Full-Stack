@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Login form</title>
+    </head>
+    <body>
+        <form onclick="return loginForm()">
+            <label>Name</label>
+            <br>
+            <input type="text" id="username" >
+            <br>
+            <span style="color:red" id="msg1"></span>
+            <br>
+            <label for="">Number</label>
+            <br>
+            <input type="number" id="number">
+            <br>
+            <span style="color:red" id="msg2"></span>
+            <br>
+            <label for="">Email</label>
+            <br>
+            <input type="email" id="email">
+            <br>
+            <span style="color:red" id="msg3"></span>
+            <br>
+            <button>Login</button>
+        </form>
+    </body>
+    <script>
+        function loginForm(){
+            let username=document.getElementById("username").value;
+            let number=document.getElementById("number").value;
+            let email=document.getElementById("email").value;
+
+            if(username==""){
+                document.getElementById("msg1").innerHTML="Please enter the name!";
+                return false;
+            }
+            else{
+                document.getElementById("msg1").innerHTML="";
+            }
+            
+            if(isNaN(number=="")){
+                document.getElementById("msg2").innerHTML="Kindly enter valid number!";
+                return false;
+            }
+            else if (number==""){
+                document.getElementById("msg2").innerHTML="Kindly enter the number!";
+                return false;
+            }
+            else{
+                document.getElementById("msg2").innerHTML="";
+            }
+
+            if(email==""){
+                document.getElementById("msg3").innerHTML="Kindly enter the emil!";
+                return false;
+            }
+            else{
+                document.getElementById("msg3").innerHTML="";
+            }
+            alert("Login Successfull!");
+            return true;
+        }
+    </script>
+</html>
