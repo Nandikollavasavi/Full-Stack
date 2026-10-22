@@ -1,0 +1,13 @@
+import React from 'react'
+import './Third.css'
+function Third() {
+    return (
+        <>
+        <div className='Main3'>
+            <h1>Third Component</h1>
+        </div>
+        </>
+    )
+}
+
+export default Third

@@ -1,0 +1,17 @@
+.Main1{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(255,2,2);
+    margin: 0%;
+    font-size: larger;
+    text-align: center;
+    box-sizing: border-box;
+    color: white;
+}
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0%;
+}
+
